@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng tổng kết điểm</title>
+</head>
+<body>
+<table border="1" style="text-align: center;">
+    <tr>
+        <td>Toán</td>
+        <td id="toan">t</td>
+    </tr>
+        <td>Lý</td>
+        <td id="ly">v</td>
+    <tr>
+        <td>Hóa</td>
+        <td id="hoa">h</td>
+    </tr>
+    <tr>
+        <th>Điểm tổng</th>
+        <td id="diemtong" >x</td>
+    </tr>
+    <tr>
+        <th>Điểm trung bình</th>
+        <td id="diemtrungbinh" >y</td>
+    </tr>
+</table>
+<script>
+    var t;
+    var h;
+    var v;
+    t= parseInt(prompt('Nhập điểm toán'));
+    h= parseInt(prompt('Nhập điểm hóa'));
+    v= parseInt(prompt('Nhập điểm vật lý'));
+    document.getElementById("toan").innerHTML = t;
+    document.getElementById("ly").innerHTML = v;
+    document.getElementById("hoa").innerHTML = h;
+    var x= t + h + v
+    var y= x / 3
+    document.getElementById("diemtong").innerHTML = x;
+    document.getElementById("diemtrungbinh").innerHTML = y;
+</script>
+</body>
+</html>
